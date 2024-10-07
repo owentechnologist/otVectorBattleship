@@ -56,7 +56,7 @@ Note: to make it more challenging, there are 10 quadrants and the ships are scat
 You should run with all the available options enabled the first time you run the program:  (use your redis -h host and -p port and -s password)
 
 ``` 
-(redisvl) owentaylor@Owens-MacBook-Pro hellovss % python3 vss_battleship.py -h redis.FIXME.url -p 10000 -s PASSWORD -c y -l y -t y -e y
+(redisvl) owentaylor@Owens-MacBook-Pro hellovss % python3 vector_battleship.py -h redis.FIXME.url -p 10000 -s PASSWORD -c y -l y -t y -e y
 ```
 
 After the first time you run the program you should set the index creation flag -c to n  (you can also choose to turn off the -e explanation)
@@ -130,15 +130,15 @@ Should we blast that ship out of the water (remove it from Redis)? Y/N :Y
 exiting ...
 ```
 
-6. If you get errors it is most likely because you haven't configured the host and port to your redis server
+5. If you get errors it is most likely because you haven't configured the host and port to your redis server
 
-7. If you get no results from your query - try again and load more battleships using this argument/flag: 
+6. If you get no results from your query - try again and load more battleships using this argument/flag: 
 
 ```
 -l y
 ``````
 
-8. when you are done exploring this set of examples you can deactivate the virtual environment:
+7. when you are done exploring this set of examples you can deactivate the virtual environment:
 
 ```
 source deactivate
