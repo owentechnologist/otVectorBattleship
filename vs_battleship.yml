@@ -1,0 +1,25 @@
+version: '0.1.0'
+
+index:
+  name: idx_battleship
+  storage_type: hash
+  prefix: battleship
+  key_separator: ":"
+
+fields:
+  - name: battleship_class
+    type: text
+  - name: battleship_id
+    type: numeric
+  - name: quadrant
+    type: numeric
+  - name: anchorpoint
+    type: numeric
+  - name: coordinates_embedding
+    type: vector
+    attrs:
+      algorithm: flat
+      dims: 100
+      distance_metric: L2
+      datatype: float32 
+      initial_cap: 1000 
